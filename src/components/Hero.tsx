@@ -53,10 +53,10 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="relative h-[60vh] lg:h-[80vh] w-full mt-12 lg:mt-0"
+          className="relative h-[50vh] md:h-[60vh] lg:h-[80vh] w-full mt-4 md:mt-12 lg:mt-0"
         >
           {/* Main Image placeholder */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-[#cfc5ba] shadow-2xl overflow-hidden flex items-center justify-center relative group">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] h-[95%] md:w-[80%] md:h-[80%] bg-[#cfc5ba] shadow-2xl overflow-hidden flex items-center justify-center relative group">
             <div className="absolute inset-0 bg-text-main/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
             <img 
               src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=800" 
@@ -69,7 +69,7 @@ export default function Hero() {
           <motion.div 
             animate={{ y: [-10, 10, -10] }}
             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-            className="absolute -bottom-6 md:bottom-[10%] right-4 md:right-auto md:-left-12 w-36 md:w-40 h-40 md:h-48 bg-bg-primary/90 backdrop-blur-md p-5 md:p-6 shadow-2xl z-20 flex flex-col justify-end border border-text-main/5"
+            className="absolute bottom-2 md:bottom-[10%] right-2 md:right-auto md:-left-12 w-36 md:w-40 h-40 md:h-48 bg-bg-primary/90 backdrop-blur-md p-5 md:p-6 shadow-2xl z-20 flex flex-col justify-end border border-text-main/5"
           >
             <p className="text-[10px] md:text-xs uppercase tracking-widest text-accent-green font-bold">Torra Fresca</p>
             <p className="text-lg md:text-xl font-serif text-text-main mt-2 leading-tight">Garantida<br/>Toda Semana</p>
