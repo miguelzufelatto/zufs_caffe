@@ -25,10 +25,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.05] text-text-main mb-8 -ml-1"
+            className="text-4xl md:text-7xl lg:text-8xl font-serif leading-[1.05] text-text-main mb-8 -ml-1"
           >
             Café especial<br/> 
-            <span className="italic text-brand-primary text-6xl md:text-8xl lg:text-9xl tracking-tighter">direto do produtor</span><br/>
+            <span className="italic text-brand-primary text-5xl md:text-8xl lg:text-9xl tracking-tighter">direto do produtor</span><br/>
             para a sua xícara.
           </motion.h1>
 
@@ -38,11 +38,11 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.6 }}
             className="flex flex-wrap gap-4"
           >
-            <button className="bg-accent-rust text-bg-primary px-8 py-4 text-sm uppercase tracking-widest font-bold hover:bg-text-main transition-colors flex items-center gap-2 group border border-accent-rust">
+            <button className="bg-accent-rust text-bg-primary px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm uppercase tracking-widest font-bold hover:bg-text-main transition-colors flex items-center gap-2 group border border-accent-rust">
               Explorar Cafés
               <span className="transform group-hover:translate-x-1 transition-transform">→</span>
             </button>
-            <button className="border border-brand-primary text-brand-primary px-8 py-4 text-sm uppercase tracking-widest hover:bg-brand-primary hover:text-bg-primary transition-colors font-bold">
+            <button className="border border-brand-primary text-brand-primary px-6 md:px-8 py-3 md:py-4 text-xs md:text-sm uppercase tracking-widest hover:bg-brand-primary hover:text-bg-primary transition-colors font-bold">
               Clube de Assinatura
             </button>
           </motion.div>
@@ -69,11 +69,11 @@ export default function Hero() {
           <motion.div 
             animate={{ y: [-10, 10, -10] }}
             transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-            className="absolute bottom-[10%] left-0 md:-left-12 w-40 h-48 bg-bg-primary/90 backdrop-blur-md p-6 shadow-2xl z-20 flex flex-col justify-end border border-text-main/5"
+            className="absolute -bottom-6 md:bottom-[10%] right-4 md:right-auto md:-left-12 w-36 md:w-40 h-40 md:h-48 bg-bg-primary/90 backdrop-blur-md p-5 md:p-6 shadow-2xl z-20 flex flex-col justify-end border border-text-main/5"
           >
-            <p className="text-xs uppercase tracking-widest text-accent-green font-bold">Torra Fresca</p>
-            <p className="text-xl font-serif text-text-main mt-2 leading-tight">Garantida<br/>Toda Semana</p>
-            <div className="w-12 h-[1px] bg-accent-rust mt-4"></div>
+            <p className="text-[10px] md:text-xs uppercase tracking-widest text-accent-green font-bold">Torra Fresca</p>
+            <p className="text-lg md:text-xl font-serif text-text-main mt-2 leading-tight">Garantida<br/>Toda Semana</p>
+            <div className="w-12 h-[1px] bg-accent-rust mt-3 md:mt-4"></div>
           </motion.div>
         </motion.div>
 

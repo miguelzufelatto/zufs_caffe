@@ -36,14 +36,14 @@ export default function History() {
           </div>
 
           <motion.div
-            className="order-1 lg:order-2 relative aspect-[4/5] lg:aspect-auto lg:h-[800px] w-full"
+            className="order-1 lg:order-2 relative aspect-square md:aspect-[4/5] lg:aspect-auto lg:h-[800px] w-full"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
             {/* An asymmetric image placement */}
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-white shadow-2xl overflow-hidden group">
+            <div className="relative lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 w-full lg:w-[90%] h-full lg:h-[90%] bg-white shadow-2xl overflow-hidden group">
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700 z-10" />
               <img
                 src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=800"
@@ -52,7 +52,7 @@ export default function History() {
               />
             </div>
             {/* Floating decorative element */}
-            <div className="absolute top-[10%] -left-[10%] w-48 h-48 bg-accent-green/5 border border-accent-green/20 backdrop-blur-sm -z-10" />
+            <div className="hidden lg:block absolute top-[10%] -left-[10%] w-48 h-48 bg-accent-green/5 border border-accent-green/20 backdrop-blur-sm -z-10" />
           </motion.div>
 
         </div>
